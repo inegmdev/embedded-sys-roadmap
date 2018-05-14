@@ -1,3 +1,4 @@
+![E-Tech](https://i.imgur.com/1s17e9r.png)
 # E-Tech Embedded System Diploma
 ## Module 1: Solid C Programming and Intro to Embedded World
 ### Part 1: Introduction to Embedded Systems
