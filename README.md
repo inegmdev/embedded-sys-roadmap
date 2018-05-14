@@ -1,11 +1,11 @@
 #### ES Diploma
-	### Module 2: Data Structures, Algorithms and Computer Architecture
-		## Part 1: Data Structures
-			Intro to data structure
-			Linked Lists
-				- Linked Lists vs. Array
-				- Implementations of Linked Lists
-					- Insert Node
+### Module 2: Data Structures, Algorithms and Computer Architecture
+## Part 1: Data Structures
+Intro to data structure
+Linked Lists
+- Linked Lists vs. Array
+- Implementations of Linked Lists
+- Insert Node
 					- Traverse through List
 					- Delete Node
 					Reverse List
