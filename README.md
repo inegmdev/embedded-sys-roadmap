@@ -1,4 +1,4 @@
-# ES Diploma
+# E-Tech Embedded System Diploma
 ## Module 1: Solid C Programming and Intro to Embedded World
 ### Part 1: Introduction to Embedded Systems
 - ES Definition
