@@ -196,209 +196,211 @@
 	- Data Bus
 	- Control Bus
 - Von Neumann vs. Harvard Architecture
-	Module 3: Microcontroller Drivers Interfacing
-		Part 1: Interfacing Basic Drivers
-			AVR Architecture
-			Getting Started
-				Basic Connection (Crystal and Biasing)
-				Generating Hex File 
-				Programmer
-			GPIO
-				Input (Switch)
-				Output
-			Debugging using Serial printf (Caveman Debugging)
-			LCD
-				Pin Configuration
-				LCD Modes
-				Implement Driver Functions
-					Write Char
-					Print String
-					Cursor Display Mode
-					Set Cursor Position
-					Clear Screen
-				Custom Character
-			Keypad
-				Keypad Matrix
-				Scan Button Press
-			ADC & DAC
-				ADC
-					ADC Terms
-						Sampling 
-						Resolution 
-						Channels
-					ADC Conversion Technique (Successive Approximation)
-					Sensor Interfacing
-						Temp Sensor (LM35)
-						Light Sensor (LDR)
-					Analog Comparator
-				DAC
-					Digital to Analog Conversion
-					Implementing Code for (DAC0808)
-			Timers & Counters
-				Timer Functional Diagram
-				Compare Match Mode
-				Normal Timer Mode
-				16-Bit Timer Vs. 8-Bit Timer
-				Using Pre-Scalars for Generating Large Time Delays
-				Timers to Counters 
-			PWM Programming
-				What's a PWM wave?
-				PWM Applications 
-				PWM Mode in Timers
-				Controlling Servo Motor
-			Input Capture and Wave Generation
-				Wave Generation
-					Generating Waves
-						Square Waves
-						Pulse Pattern
-					Normal and CTC modes
-				Input Capture Mode
-					Measuring Frequency of Wave
-					Measuring Pulse Width
-			Interrupt
-				Polling vs. Interrupts
-				Interrupt Service Routine (ISR)
-				Interrupt Vector Table
-				External Interrupt
-				Interrupt Priority 
-				Nesting Interrupts
-				Context Switching
-				Interrupt Latency
-			Serial Communication
-				Serial vs. Parallel
-				Terminologies 
-					Data Transfer Rate (Baud Rate)
-					Synch vs. ASynch
-					Full-duplex vs. Half-duplex
-				USART Module Driver Implementation
-					Data Frame
-					Sending Data
-					Receiving Data
-				SPI
-					SPI Essentials
-					SPI Modes
-					SPI Master/Slave Communication
-					Implementing SPI Code
-						Master Code
-						Slave Code
-				I2C
-					I2C Essentials
-						I2C Operating Mode
-						I2C Protocol
-						I2C Addressing Modes
-					I2C Master/Slave Communication
-					I2C Implementing Code
-						Slave Code
-						Master Code
-			Power Management Modes
-				Why Power Management?
-				AVR Sleep
-				On-time Calculations for Battery-based Systems
-			Debugging AVR
-				Hardware Debugger
-				AVR Simulator
-				PROTEUS Simulator
-		Part 2: Make Arduino-like Driver Abstractions
-			Intro to Arduino Core Style
-			digitalRead, digitalWrite
-			analogRead, analogWrite
-			Serial.begin, Serial.write, Serial.print, Serial.println, Serial.read, Serial.available
-	Module 4: RTOS and Automotive Programming and Communication Standards
-		Part 1: RTOS
-			Part1 : RTOS concepts
-				Introduction for RTOS
-				RTOS vs. Normal OS
-				RTOS basic Components and How it works
-				Foreground / Background Program Execution
-				Multitasking
-				Task Management
-					Task States
-					Context Switching
-				Scheduler
-					Scheduler Types
-						Preemptive
-						Non preemptive
-					Policies / Algorithm / Strategies 
-						Priority Based
-						Round Robin
-						Least Execution Time 
-				Re-entrant / Non Re-entrant Function
-				Resource (Share Resource)
-					Mutex
-					Semaphores
-						Binary Semaphore
-						Counting Semaphore
-						Issues
-							Priority Inversion
-							Dead block
-			Part 2: RTOS Implementation Using FreeRTOS AVR
-				FreeRTOS Intro
-				Tasks
-					Creating Tasks
-					Deleting Tasks
-				Using Queues
-				Using Semaphores
-				Using Interrupts
-				Porting to AVR
-		Part 2: Automotive
-			1. Programming Standards
-				A. MISRA C
-				B. AutoSAR SW Architecture
-			2. Communication Protocols
-				CAN
-				LIN
-	Module 5: SW Engineering and Testing Practices
-		Part 1: SW Engineering
-			SW Engineering Concepts
-			SW Development Life Cycle
-				Waterfall Model
-				V-Model
-				Agile Model
-				Other Models Concepts
-			SW Requirements Management
-				Requirements Activities
-				Requirements Traceability 
-			SW Configuration Management
-				Config Management Concepts
-				Version Control Systems (Git)
-			SW Project Management Concepts
-			UML Concepts
-				Use Cases Diagram
-				Class Diagram
-				Activity/State Chart Diagram
-				Other Diagrams Concepts
-		Part 2: Cont'd Software Engineering : Software Testing
-			SW Testing Fundementals
-			7 Testing Principles
-			Fundamental Testing Process
-			Psychology of Testing
-			Test Levels
-				Unit Testing 
-				Integration Testing
-				System Testing
-				Acceptance Testing
-			Test Types
-				Functional Testing
-				Non-functional Testing
-				Other Testing Types Concepts
-					Structural Testing
-					Change-based Testing
-			Test Development Process
-				Test Analysis
-				Test Design
-				Traceability
-			Test Techniques
-				Static Testing
-				Dynamic Testing
-					White Box 
-						Statement Coverage
-						Decision Coverage
-					Black Box
-						Equivalence Partitioning (EP)
-						Boundary Value Analysis (BVA)
-						Decision Tables
-					How to Select Proper Testing Technique
-			Test Organization
-			Test Planning and Estimation
-			Risk and Testing
-			Overview of Common Used Testing Tools
+## Module 3: Microcontroller Drivers Interfacing
+### Part 1: Interfacing Basic Drivers
+- AVR Architecture
+- Getting Started
+	- Basic Connection (Crystal and Biasing)
+	- Generating Hex File 
+	- Programmer
+- GPIO
+	- Input (Switch)
+	- Output
+- Debugging using Serial printf (Caveman Debugging)
+- LCD
+	- Pin Configuration
+	- LCD Modes
+	- Implement Driver Functions
+		- Write Char
+		- Print String
+		- Cursor Display Mode
+		- Set Cursor Position
+		- Clear Screen
+		- Custom Character
+- Keypad
+	- Keypad Matrix
+	- Scan Button Press
+- ADC & DAC
+	- ADC
+		- ADC Terms
+		- Sampling 
+		- Resolution 
+		- Channels
+		- ADC Conversion Technique (Successive Approximation)
+		- Sensor Interfacing
+			- Temp Sensor (LM35)
+			- Light Sensor (LDR)
+		- Analog Comparator
+	- DAC
+		- Digital to Analog Conversion
+		- Implementing Code for (DAC0808)
+- Timers & Counters
+	- Timer Functional Diagram
+	- Compare Match Mode
+	- Normal Timer Mode
+	- 16-Bit Timer Vs. 8-Bit Timer
+	- Using Pre-Scalars for Generating Large Time Delays
+	- Timers to Counters 
+- PWM Programming
+	- What's a PWM wave?
+	- PWM Applications
+		- Controlling Servo Motor
+	- PWM Mode in Timers
+- Input Capture and Wave Generation
+	- Wave Generation
+	- Generating Waves
+		- Square Waves
+		- Pulse Pattern
+	- Normal and CTC modes
+	- Input Capture Mode
+	- Measuring Frequency of Wave
+		- Measuring Pulse Width
+		- Measuring Frequency
+- Interrupt
+	- Polling vs. Interrupts
+	- Interrupt Service Routine (ISR)
+	- Interrupt Vector Table
+	- External Interrupt
+	- Interrupt Priority 
+	- Nesting Interrupts
+	- Context Switching
+	- Interrupt Latency
+- Serial Communication
+	- Serial vs. Parallel
+	- Terminologies 
+		- Data Transfer Rate (Baud Rate)
+		- Synch vs. ASynch
+		- Full-duplex vs. Half-duplex
+	- USART Module Driver Implementation
+	- Data Frame
+	- Sending Data
+	- Receiving Data
+- SPI
+	- SPI Essentials
+	- SPI Modes
+	- SPI Master/Slave Communication
+	- Implementing SPI Code
+		- Master Code
+		- Slave Code
+- I2C
+	- I2C Essentials
+	- I2C Operating Mode
+	- I2C Protocol
+	- I2C Addressing Modes
+	- I2C Master/Slave Communication
+	- I2C Implementing Code
+		- Slave Code
+		- Master Code
+- Power Management Modes
+	- Why Power Management?
+	- AVR Sleep
+	- On-time Calculations for Battery-based Systems
+- Debugging AVR
+	- Hardware Debugger
+	- AVR Simulator
+	- PROTEUS Simulator
+### Part 2: Make Arduino-like Driver Abstractions
+- Intro to Arduino Core Style
+- digitalRead, digitalWrite
+- analogRead, analogWrite
+- Serial.begin, Serial.write, Serial.print, Serial.println, Serial.read, Serial.available
+
+## Module 4: RTOS and Automotive Programming and Communication Standards
+### Part 1: RTOS Concepts 
+- RTOS concepts
+- Introduction for RTOS
+- RTOS vs. Normal OS
+- RTOS basic Components and How it works
+- Foreground / Background Program Execution
+- Multitasking
+- Task Management
+- Task States
+- Context Switching
+- Scheduler
+	- Scheduler Types
+		- Preemptive
+		- Non preemptive
+	- Policies / Algorithm / Strategies 
+		- Priority Based
+		- Round Robin
+		- Least Execution Time 
+- Re-entrant / Non Re-entrant Function
+- Resource (Share Resource)
+- Mutex
+- Semaphores
+	- Binary Semaphore
+	- Counting Semaphore
+- Issues
+	- Priority Inversion
+	- Dead block
+### Part 2: RTOS Implementation Using FreeRTOS AVR
+- FreeRTOS Intro
+- Tasks
+	- Creating Tasks
+	- Deleting Tasks
+- Using Queues
+- Using Semaphores
+- Using Interrupts
+- Porting to AVR
+### Part 3: Automotive
+- Programming Standards
+	- MISRA C
+	- AutoSAR SW Architecture
+- Communication Protocols
+	- CAN
+	- LIN
+## Module 5: SW Engineering and Testing Practices
+### Part 1: SW Engineering
+- SW Engineering Concepts
+- SW Development Life Cycle
+	- Waterfall Model
+	- V-Model
+	- Agile Model
+	- Other Models Concepts
+- SW Requirements Management
+	- Requirements Activities
+	- Requirements Traceability 
+- SW Configuration Management
+	- Config Management Concepts
+	- Version Control Systems (Git)
+- SW Project Management Concepts
+- UML Concepts
+	- Use Cases Diagram
+	- Class Diagram
+	- Activity/State Chart Diagram
+	- Other Diagrams Concepts
+### Part 2: Cont'd Software Engineering : Software Testing
+- SW Testing Fundementals
+- 7 Testing Principles
+- Fundamental Testing Process
+- Psychology of Testing
+- Test Levels
+	- Unit Testing 
+	- Integration Testing
+	- System Testing
+	- Acceptance Testing
+- Test Types
+	-Functional Testing
+	- Non-functional Testing
+	- Other Testing Types Concepts
+		- Structural Testing
+		- Change-based Testing
+- Test Development Process
+	- Test Analysis
+	- Test Design
+	- Traceability
+- Test Techniques
+	- Static Testing
+	- Dynamic Testing
+		- White Box 
+			- Statement Coverage
+			- Decision Coverage
+		- Black Box
+			- Equivalence Partitioning (EP)
+			- Boundary Value Analysis (BVA)
+			- Decision Tables
+	- How to Select Proper Testing Technique
+- Test Organization
+- Test Planning and Estimation
+- Risk and Testing
+- Overview of Common Used Testing Tools
