@@ -44,240 +44,100 @@
 	- Communication Constraints
 	- Memory Consumption
 	- MCU Resources
-## Module 1: Intro to Embedded & C Programming
-		Part 1: Introduction to Embedded Systems
-			ES Definition
-			ES Characteristics
-			General System vs. Embedded System
-			Embedded System Applications
-			Embedded System Design
-				Trade off between HW and SW
-				SW (pros and cons)
-				HW (pros and cons)
-				Embedded System Design Steps
-			ES HW
-				Processing Engines
-				MCU vs. MPU
-				MCU Components
-					CPU
-					Memory Units
-					Buses
-					IO
-					Timers
-					Watchdog Timers
-					Interrupt Circuitry
-					Clock
-					Other Components
-						Communication
-							USART
-							SPI
-							I2C
-							CAN
-							LIN
-						Sensing
-							ADC
-							Analog Comparator 
-						Storage
-				MCU Clocks
-					Types
-					Sources
-					More complex (ARM, PLL)
-				MCU Power Management
-					Power Management Features (Why in Embedded?)
-					Low Power Modes
-			ES Constraints
-				Deadlines (Maximum Execution Time)
-					Operating System Constraints
-				Communication Constraints
-				Memory Consumption
-				MCU Resources
-			Selection of Microcontroller
-				MCU Vendors
-				MCU IDEs
-			Embedded System Market
-				HW Market
-				SW Market
-				Embedded Market in Egypt
-		Part 2: Solid C Programming
-			1- Choosing and Installing IDE
-				What's IDE?
-				Currently Available IDEs
-				Eclipse Download and Install
-			3. C Data Types, Operators and Expressions
-				Data Types
-					Basic Data types
-					Constatns
-						Escape character
-					Declarations
-					Casting
-				Operators
-					Arithmetic Operators (+,-,*,/,%)
-					(++, --) operators
-					Relational Operators
-					Logical Operators ( AND , OR , NOT ) 
-					Bitwise Operators ( & , | , ^ , << , >> , ~ )
-					Conditional Operator (Ternary) ()?:
-					sizeof( ) operator
-					Operator Precedence Rules
-			4. Control Flow
-				Conditional
-					If, else if, else
-					Switch
-				Loops
-					While
-					Do While
-					For
-					Break; Continue;
-					Goto Labels
-						Spaghetti Vs. Structured Code
-			5. Functions
-				Basics of functions
-				Function Declaration (Prototype) and Definition
-				Call by Value vs. Call by reference
-				Static local variables, register keyword
-				Recursion
-			6.Arrays
-				Array definition and Multi-dimension Arrays
-				Arrays and functions (passing, returning)
-				Strings (characters array)
-			7. Pointers
-				Pointer and Addresses
-				Dereferencing 
-				Pass by value vs. Pass by reference (address)
-				Pointers and arrays
-				Pointer Arithmetic
-				Why using pointers over arrays in loops?
-				Pointer to functions
-				Complex pointers
-			8. Structure and User-defined Data Types
-				need for complex data types
-				struct keyword
-				Arrays of structs
-				Pointers to structs (*will be discussed in dynamic memory allocation*)
-				struct usage with functions (why?)
-				Typedef (user-defined types)
-				Struct bit fileds
-				Union
-			9. Dynamic Memory Allocation
-				Dynamic vs. static memory allocation
-				malloc, calloc, realloc and free
-				Advantages, disadvantages
-			10- Modularity and Program Structure
-				C Preprocessors 
-					include
-					macro like functions
-					conditional inclusion
-				.h and .c files
-				overview the executing process
-				conventions to write library
-					.h file 
-						prototypes
-						extern variables
-					.c files
-						global variables
-						function definitions
-			11- Important Notes (Bonus Topics) 
-				Declaration Vs. Definition for Variables and Functions
-				What does the compiler actually do? (Compilation Process)
-				Storage Classes
-					auto, register, static, extern
-				Pointer Reading
-				Applications in which unions are helpful (IPV4)
-				Command Line Arguments
-
-				MCU Vendors
-				MCU IDEs
-			Embedded System Market
-				HW Market
-				SW Market
-				Embedded Market in Egypt
-		Part 2: Solid C Programming
-			1- Choosing and Installing IDE
-				What's IDE?
-				Currently Available IDEs
-				Eclipse Download and Install
-			3. C Data Types, Operators and Expressions
-				Data Types
-					Basic Data types
-					Constatns
-						Escape character
-					Declarations
-					Casting
-				Operators
-					Arithmetic Operators (+,-,*,/,%)
-					(++, --) operators
-					Relational Operators
-					Logical Operators ( AND , OR , NOT ) 
-					Bitwise Operators ( & , | , ^ , << , >> , ~ )
-					Conditional Operator (Ternary) ()?:
-					sizeof( ) operator
-					Operator Precedence Rules
-			4. Control Flow
-				Conditional
-					If, else if, else
-					Switch
-				Loops
-					While
-					Do While
-					For
-					Break; Continue;
-					Goto Labels
-						Spaghetti Vs. Structured Code
-			5. Functions
-				Basics of functions
-				Function Declaration (Prototype) and Definition
-				Call by Value vs. Call by reference
-				Static local variables, register keyword
-				Recursion
-			6.Arrays
-				Array definition and Multi-dimension Arrays
-				Arrays and functions (passing, returning)
-				Strings (characters array)
-			7. Pointers
-				Pointer and Addresses
-				Dereferencing 
-				Pass by value vs. Pass by reference (address)
-				Pointers and arrays
-				Pointer Arithmetic
-				Why using pointers over arrays in loops?
-				Pointer to functions
-				Complex pointers
-			8. Structure and User-defined Data Types
-				need for complex data types
-				struct keyword
-				Arrays of structs
-				Pointers to structs (*will be discussed in dynamic memory allocation*)
-				struct usage with functions (why?)
-				Typedef (user-defined types)
-				Struct bit fileds
-				Union
-			9. Dynamic Memory Allocation
-				Dynamic vs. static memory allocation
-				malloc, calloc, realloc and free
-				Advantages, disadvantages
-			10- Modularity and Program Structure
-				C Preprocessors 
-					include
-					macro like functions
-					conditional inclusion
-				.h and .c files
-				overview the executing process
-				conventions to write library
-					.h file 
-						prototypes
-						extern variables
-					.c files
-						global variables
-						function definitions
-			11- Important Notes (Bonus Topics) 
-				Declaration Vs. Definition for Variables and Functions
-				What does the compiler actually do? (Compilation Process)
-				Storage Classes
-					auto, register, static, extern
-				Pointer Reading
-				Applications in which unions are helpful (IPV4)
-				Command Line Arguments
-
+- Selection of Microcontroller
+	- MCU Vendors
+	- MCU IDEs
+- Embedded System Market
+	- HW Market
+	- SW Market
+	- Embedded Market in Egypt
+### Part 2: Solid C Programming
+1. Choosing and Installing IDE
+	- What's IDE?
+	- Currently Available IDEs
+	- Eclipse Download and Install
+2. C Data Types, Operators and Expressions
+	- Data Types
+		- Basic Data types
+		- Constatns
+		- Escape character
+		- Declarations
+		- Casting
+	- Operators
+		- Arithmetic Operators (+,-,*,/,%)
+		- (++, --) operators
+		- Relational Operators
+		- Logical Operators ( AND , OR , NOT ) 
+		- Bitwise Operators ( & , | , ^ , << , >> , ~ )
+		- Conditional Operator (Ternary) ()?:
+		- sizeof( ) operator
+		- Operator Precedence Rules
+3. Control Flow
+	- Conditional
+		- If, else if, else
+		- Switch
+	- Loops
+		- While
+		- Do While
+		- For
+		- Break; and Continue;
+		- Goto Labels
+		- Spaghetti Vs. Structured Code
+4. Functions
+	- Basics of functions
+	- Function Declaration (Prototype) and Definition
+	- Call by Value vs. Call by reference
+	- Static local variables, register keyword
+	- Recursion
+5. Arrays
+	- Array definition and Multi-dimension Arrays
+	- Arrays and functions (passing, returning)
+	- Strings (characters array)
+6. Pointers
+	- Pointer and Addresses
+	- Dereferencing 
+	- Pass by value vs. Pass by reference (address)
+	- Pointers and arrays
+	- Pointer Arithmetic
+	- Why using pointers over arrays in loops?
+	- Pointer to functions
+	- Reading Complex pointers
+7. Structure and User-defined Data Types
+	- Need for complex data types
+	- Struct keyword
+	- Arrays of structs
+	- Pointers to structs (*will be discussed in dynamic memory allocation*)
+	- struct usage with functions (why?)
+	- Typedef (user-defined types)
+	- Struct bit fileds
+	- Union
+8. Dynamic Memory Allocation
+	- Dynamic vs. static memory allocation
+	- malloc, calloc, realloc and free
+	- Advantages, disadvantages
+9. Modularity and Program Structure
+	- C Preprocessors 
+		- #include
+		- macro like functions
+		- conditional inclusion
+	- .h and .c files
+		- overview the executing process
+		- conventions to write library
+		- .h file 
+			- prototypes
+			- extern variables
+		- .c files
+			- global variables
+			- function definitions
+10. Important Notes (Bonus Topics) 
+	- Declaration Vs. Definition for Variables and Functions
+	- What does the compiler actually do? (Compilation Process)
+	- Storage Classes
+	- auto, register, static, extern
+	- Pointer Reading
+	- Applications in which unions are helpful (IPV4)
+	- Command Line Arguments
+	
 ## Module 2: Data Structures, Algorithms and Computer Architecture
 ### Part 1: Data Structures
 1. Intro to data structure
